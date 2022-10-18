@@ -42,16 +42,23 @@ Your code here:
 ```{r}
 
 # Transform date column to datetime (lubridate package!)
-
+unemp$date_trans <- as.Date(unemp$date)
 
 
 # Create a line-plot with unemployment and date
-
-
+p <- ggplot(unemp, aes(x = date_trans, y = unemp)) + 
+  geom_line() + 
+  geom_rect(data=pres, aes(NULL,NULL,xmin=start,xmax=end,fill=party),
+            ymin=0,ymax=0.11,colour="white", size=0.5, alpha=0.2) +
+  scale_fill_manual(values=c("R" = "red", "D" = "blue")) +
+  theme(axis.title.x = element_blank()) +
+  xlim(0,max(unemp$date_trans))+
+  ylim(0,0.11) +
+  theme(legend.position="top") +
+  geom_vline(xintercept = pres$end,linetype=4, colour="black")
 
 # Fix axes and add colored rectangles
-
-
+p 
 
 # Adding president names
 
@@ -125,7 +132,7 @@ Animated 3D plot:
 #   - z-axis: message_length
 # see ?plot_ly for guidance!
 
-fig <- plot_ly(df_plot, _________, _________, _________, color = ~party)
+fig <- plot_ly(df_plot, x = ~likes_count, y = ~shares_count, z = ~message_length, color = ~party)
 fig <- fig %>% add_markers()
 fig <- fig %>% layout(scene = list(xaxis = list(title = "Log likes count"),
                      yaxis = list(title = "Log shares count"),

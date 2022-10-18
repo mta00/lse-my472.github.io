@@ -240,6 +240,8 @@ Lists are an even more flexible way of combining multiple objects into a single 
 ```{r}
 list1 <- list(some_numbers = 1:10, some_letters = c("a", "b", "c"))
 list1
+list1$some_numbers
+list1$some_letters
 ```
 
 or even vectors and data frames, or multiple data frames:
