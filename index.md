@@ -20,15 +20,16 @@ All students are required to complete the preparatory course 'R Advanced for Met
 
 Office hour slots to be booked via LSE's StudentHub
 
-* [Friedrich Geiecke](f.c.geiecke@lse.ac.uk), Department of Methodology.  *Office hours*: Tuesdays 5-7pm (book via Student Hub)
-* Yuhao Qian
+* [Friedrich Geiecke](mailto:f.c.geiecke@lse.ac.uk), Department of Methodology.  *Office hours*: Tuesdays 5-7pm (book via Student Hub)
+* Yuhao Qian, Department of Economics.
 
 ### Course information
 
 * Lecture:
     - Tuesdays 9-11am, MAR.2.08
 * Classes:
-    - Thursdays 1-3pm, NAB.2.08
+    - Thursdays 1-2pm, NAB.2.08
+    - Thursdays 2-3pm, CBG.2.05
     - Thursdays 5-6pm, NAB.2.16
 
 No lectures or classes will take place during (Reading) Week 6.
@@ -42,12 +43,12 @@ No lectures or classes will take place during (Reading) Week 6.
 | 2  |  4 Oct | [Tabular data](#2-tabular-data) |  
 | 3  | 11 Oct | [Data visualisation](#3-data-visualisation) |  
 | 4  | 18 Oct | [Textual data](#4-textual-data) |  
-| 5  | 25 Oct | [HTML and CSS](#5-html-and-css) |
+| 5  | 25 Oct | [HTML, CSS, and scraping static pages](#5-html-css-and-scraping-static-pages) |
 | 6  |  1 Nov | _Reading week_ |  
-| 7  | 7 Nov | [XML, RSS, and scraping non-static pages](#7-xml,-rss,-and-scraping-non-static-pages) |   
+| 7  | 7 Nov | [XML, RSS, and scraping non-static pages](#7-xml-rss-and-scraping-non-static-pages) |   
 | 8  | 14 Nov | [Working with APIs](#8-working-with-apis) |  
 | 9  | 21 Nov | [Creating and managing databases](#9-creating-and-managing-databases) |  
-| 10 |  28 Nov | [Interacting with online databases](#10-interacting-with-online-databases)|  
+| 10 |  28 Nov | [Interacting with online databases](#10-cloud-databases-and-NoSQL)|  
 | 11 | 5 Dec | [Cloud Computing](#11-cloud-computing) |  
 
 
@@ -171,11 +172,11 @@ We will learn how to work with unstructured data in the form of text and discuss
 ##### Lecture
 
 - [Slides](week04/MY472-week04-text.pdf)
-- Code: [Parsing pdfs](week04/01-parsing-pdfs.Rmd), [regular expressions in R](week04/02-regular-expressions-in-r.Rmd), [textual analysis in R](week04/03-text-analysis.Rmd)
+- Code: [Regular expressions in R](week04/01-regular-expressions-in-r.Rmd), [text analysis](week04/02-text-analysis.Rmd), [parsing pdfs](week04/03-parsing-pdfs.Rmd)
 
 ##### Seminar
 
-- Code: [Exercises in textual analysis](week04/04-exercises-text-analysis.Rmd)
+- Code: [Exercises in text analysis](week04/04-exercises-text-analysis.Rmd), [solution](week04/04-exercises-text-analysis-solution.Rmd)
 
 
 ##### Reading
@@ -184,7 +185,7 @@ We will learn how to work with unstructured data in the form of text and discuss
 
 ##### Further reading
 - Wickham, Hadley and Garett Grolemund.  2017, [Chapter 14](http://r4ds.had.co.nz/strings.html)
-- [Regular expressions cheat sheet](week07/regular-expressions-cheat-sheet-v2.pdf)
+- [Regular expressions cheat sheet](week04/regular-expressions-cheat-sheet-v2.pdf)
 - [Regular expressions in R vignette](https://cran.r-project.org/web/packages/stringr/vignettes/regular-expressions.html)
 
 
@@ -194,19 +195,19 @@ We will learn how to work with unstructured data in the form of text and discuss
 
 
 
-#### 5. HTML and CSS
+#### 5. HTML, CSS, and scraping static pages
 
-In this week, we will learn how to obtain the data from the internet. This week we cover basic web scraping to turn web data into text or numbers. We will also discuss the client-server model.
+This week we cover the basics of web scraping for tables and unstructured data from static pages. We will also discuss the client-server model.
 
 ##### Lecture
 
 - [Slides](week05/MY472-week05-scraping-1.pdf)
-- Code: [Website example](week05/website_5.html), [selecting elements](week05/01-selecting-elements.Rmd), [scraping tables](week05/02-scraping-tables.Rmd)
+- Code: [Website example](week05/data/website_5.html), [selecting elements](week05/01-selecting-elements.Rmd), [scraping tables](week05/02-scraping-tables.Rmd)
 
 
 ##### Seminar
 
-- Code: [Scraping unstructured data](week05/03-exercises-scraping-unstructured-data.Rmd)
+- Code: [Scraping unstructured data](week05/03-exercises-scraping-unstructured-data.Rmd), [solution](week05/03-exercises-scraping-unstructured-data-solution.Rmd)
 
 
 ##### Reading
@@ -240,7 +241,7 @@ Continuing from the material covered in Week 5, we will learn the advanced topic
 
 ##### Seminar
 
-- Code: [Scraping UK election data](week07/04-exercises-advanced-scraping.Rmd)
+- Code: [Scraping UK election data](week07/04-exercises-advanced-scraping.Rmd), [solution](week07/04-exercises-advanced-scraping-solution.Rmd)
 
 
 ##### Reading
@@ -280,8 +281,8 @@ This week discusses how to work with Application Programming Interfaces (APIs) t
 
 ##### Assignment 4: APIs
 
-- GitHub Classroom link available via Moodle on Monday, 14 November, 2pm
-- Deadline on Friday, 25 November, 2pm
+- GitHub Classroom link available via Moodle on Tuesday, 15 November
+- Deadline on Monday, 28 November, 11am
 
 
 #### 9. Creating and managing databases
@@ -305,7 +306,7 @@ This session will offer an introduction to relational databases: structure, logi
 * Stephens et al. 2009. [_Teach yourself SQL in one hour a day_](https://books.google.co.uk/books?hl=en&lr=&id=9fDZ_rVoxx0C&oi=fnd&pg=PR5&dq=%22Sams+Teach+Yourself+SQL+in+24+Hours%22&ots=UkaClJDMem&sig=wgLy-DG3bc7g0LO0_Ojy5Cy2Ejs#v=onepage&q=%22Sams%20Teach%20Yourself%20SQL%20in%2024%20Hours%22&f=false). Sam's Publishing.
 
 
-#### 10. NoSQL and online databases
+#### 10. Cloud databases and NoSQL
 
 This week covers how to set up and use relational databases in the cloud and fundamentals of a document based NoSQL database.
 
